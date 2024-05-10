@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Vacation Destination Wishlist</h1>
+        <p>
+          Found exciting place to visit on your next vacation?
+          Use the form below to add them to your wish list.
+        </p>
+      </header>
+
+      <main>
+        <form id="destinations-details-form">
+          <label for="name">Destination Name:</label>
+          <input type="text" id="name" placeholder="Provide a name for the destination" required>
+
+          <label for="location">Destination Location</label>
+          <input type="text" id="location" placeholder="Where is the destination located?" required>
+
+          <label for="photo">Photo</label>
+          <input type="url" id="photo" placeholder="Provide a URL for a photo of the destination">
+
+          <label for="description">Description</label>
+          <textarea name="description" id="description" placeholder="Describe the destination"></textarea>
+          <button type="submit">Add to list</button>
+        </form>
+
+        <article>
+          <h2 id="title">Enter destination details</h2>
+          <div id="destination-container">
+            
+          </div>
+        </article>
+      </main>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
